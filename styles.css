@@ -1,1 +1,13 @@
 /*  your css code here. If applicable */
+// Create a student object
+const student = {
+    name: "John Doe"
+};
+
+// Add a method `getKeys()` to the Object prototype
+Object.prototype.getKeys = function() {
+    return Object.keys(this);
+};
+
+// Call the `getKeys()` method on the student object
+console.log(student.getKeys());  // Output: ["name"]
